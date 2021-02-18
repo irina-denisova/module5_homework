@@ -2,12 +2,13 @@
 
 const arr6 = [1, 2, 3, 1]
 
-for (let i = 0; i < arr6.length; i++) {
+for (let i = 1; i < arr.length; i++) {
   
-  if ( arr[0] != arr6[i] ) {
+  if ( arr[0] != arr[i] ) {
     console.log('false');
     break;
-  } else if ( i == arr6.length - 1 ) {
+    
+  } else if ( i == arr.length - 1 ) {
     console.log('true');
   }
 }
