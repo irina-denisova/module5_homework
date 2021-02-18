@@ -4,19 +4,12 @@
 
 let x = prompt('enter x:', '');
 
-let result = typeof x;
-
-switch (result) {
-  case 'number':
-      console.log('Type of x is number');
-      break;
-  case 'string':
-      console.log('Type of x is string');
-      break;
-  case 'boolean':
-      console.log('Type of x is boolean');
-      break;
-  default:
+if ( isFinite(x) ) {
+  console.log('Type of x is number');
+} else if ( typeof x === 'string' ) {
+  console.log('Type of x is string');
+} else if ( typeof x === 'boolean' ) {
+  console.log('Type of x is boolean');
+} else {
       console.log('Type of x is not defined');
 }
-
