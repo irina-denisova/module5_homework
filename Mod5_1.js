@@ -9,4 +9,4 @@ if ( isFinite(num) ) {
   console.log(`Number is ${result}`);
 } else {
   console.log('Oops, it is not number.');
-}
+}   
